@@ -53,7 +53,7 @@ Quick notes before starting:
 5. You should now be back at your terminal prompt.
    <br>Use `gud status` to check the status of your files now.
    - Your output should look similar to below:
-     ![image](https://github.com/user-attachments/assets/b8016ba5-e704-4ff5-967a-f55425bf46a7)
+     <img width="806" height="299" alt="359653517-b8016ba5-e704-4ff5-967a-f55425bf46a7" src="https://github.com/user-attachments/assets/34f341cd-e1f3-40b2-838e-79c3ca744549" />
    - This is effectively saying that, next time you make a _commit_ (which is in the next step), _notes.txt_ will be included in that _commit_.
 6. Use the command `gud commit`
    - It will now prompt you to include a _message_ for this commit. You would normally describe what changes you have made since the last commit.
@@ -61,7 +61,7 @@ Quick notes before starting:
 7. "Committing" files like this, is effectively creating a _snapshot_ in time. At some point in the future you could go back to the files, and restore them to the state that they were in at the time of this commit. Pretty nifty - more on this later!
 8. Use the command `gud log`
    - Press enter, and you should see something like this:
-     ![image](https://github.com/user-attachments/assets/67a0a17a-3b27-4620-92ec-0faac2bd7199)
+     <img width="791" height="231" alt="359653614-67a0a17a-3b27-4620-92ec-0faac2bd7199" src="https://github.com/user-attachments/assets/078d586f-b43a-4f58-9f70-9a72369da799" />
    - This shows you _all_ of your previous commits, and is helpful for seeing what changes have been made in the past.
    - **NOTE: If you find yourself stuck in a window (most likely if you are on Mac or Linux), press q to exit.**
 9. Let's create another commit.
@@ -73,8 +73,8 @@ Quick notes before starting:
     - Don't forget to **press q** to exit if you need to!
 12. Open up _notes.txt_ and make some change to the file (literally anything!).
 13. Use `gud status` and you'll see that Gud has detected this modification:
-    ![image](https://github.com/user-attachments/assets/514d7161-d6c0-45fc-9222-495968227f4c)
-14. Use `gud stage add notes.txt` then `gud commit`, and leave a message like "changed notes.txt".
+    <img width="780" height="275" alt="359653800-514d7161-d6c0-45fc-9222-495968227f4c" src="https://github.com/user-attachments/assets/d8ac28af-3566-426f-a934-fe8faa77fd3e" />
+15. Use `gud stage add notes.txt` then `gud commit`, and leave a message like "changed notes.txt".
 
 #### So why are we doing all of this? What is the point of this software?
 
@@ -88,7 +88,7 @@ Good question. Up until this point, we haven't really done anything too exciting
 2. Use the command `gud status`
    - You will notice that Gud has detected that you deleted the folder.
    - Your output should look similar to below:
-     ![image](https://github.com/user-attachments/assets/a6de36cd-9dae-444a-ab9d-039e1bb62d91)
+     <img width="787" height="298" alt="359653989-a6de36cd-9dae-444a-ab9d-039e1bb62d91" src="https://github.com/user-attachments/assets/d2ea282a-95bb-4090-b2fe-bf9f9f03d5cc" />
 3. The next commands will depend on whether you are on Windows or Mac/Linux (due to how file paths work):
    - On **Windows** - use `gud stage add project\main.py` then `gud stage add project\vars.py`
    - On **Mac or Linux** - use `gud stage add project/main.py` then `gud stage add project/vars.py`
@@ -101,7 +101,7 @@ Good question. Up until this point, we haven't really done anything too exciting
 
 5. Use `gud log`
    - Your output should show 4 commits, as below:
-     ![image](https://github.com/user-attachments/assets/a22e5a22-5c07-4a45-885c-30d24d693c7c)
+     <img width="814" height="621" alt="359654500-a22e5a22-5c07-4a45-885c-30d24d693c7c" src="https://github.com/user-attachments/assets/f9766376-144f-4fa2-822f-a26280b3f046" />
    - Each of these 4 commits represents a _snapshot_ in time, and Gud (like Git) lets you hop back and forth between different individual snapshots.
 6. Use `gud checkout`
    - This command allows you to switch between different _snapshots_.
